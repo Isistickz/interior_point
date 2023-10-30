@@ -7,9 +7,9 @@ def main():
 
     A = []
 
-    num_of_constraints = int(input("How many constraints?\n"))
+    num_of_constraints = int(input("Enter the number of constraints: \n"))
 
-    print("Enter the coefficients of variables in the constraints:")
+    print("Enter the coefficients of variables in the constraints: ")
 
     for i in range(num_of_constraints):
         A.append(list(map(float, input().split())))
@@ -23,12 +23,16 @@ def main():
 
     approximation_accuracy = int(input("Enter the approximation accuracy:\n"))
 
-    flag = int(input("maximize or minimize? [1/2]: "))
-    if flag == 1:
-        Simplex.apply_simplex_maximization(C, A, b, approximation_accuracy)
-    elif flag == 2:
-        #Simplex.apply_simplex_maximization(C*(-1), A, b, approximation_accuracy)
-        Simplex.apply_simplex_minimization(C, A, b, approximation_accuracy)
+    alpha = float(input("Enter the alpha: \n"))
+
+    Interior_Point.Interior_Point_Solver(A, b, C, X, alpha, approximation_accuracy)
+
+    # flag = int(input("maximize or minimize? [1/2]: "))
+    # if flag == 1:
+    #     Simplex.apply_simplex_maximization(C, A, b, approximation_accuracy)
+    # elif flag == 2:
+    #     #Simplex.apply_simplex_maximization(C*(-1), A, b, approximation_accuracy)
+    #     Simplex.apply_simplex_minimization(C, A, b, approximation_accuracy)
 
 
 if __name__ == "__main__":
