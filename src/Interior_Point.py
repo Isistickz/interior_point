@@ -1,5 +1,12 @@
 import numpy as np
 
+def print_array(Array):
+    Array = np.round(Array, 2)
+    idx = 1
+    for element in Array:
+        print("x_{} = {}".format(idx, element))
+        idx += 1
+
 def get_max_negative_value(Cp):
     negative_values = Cp[Cp < 0]
     max_abs_value = np.max(np.abs(negative_values))
@@ -8,14 +15,13 @@ def get_max_negative_value(Cp):
     return largest_negative * -1
 
 def calculate_accuracy(X, tempX, accuracy, C):
+    n = X.shape[0]
     # print("I am in accuracy calculation, ", X.shape, " ", tempX.shape, " ", C.shape, '\n')
-    X = X.reshape(3, 1)
-    C = C.reshape(3, 1)
+    X = X.reshape(n, 1)
+    C = C.reshape(n, 1)
     C = np.transpose(C)
     X_norm = np.dot(C, X)
     tempX_norm = np.dot(C, tempX)
-
-    # print("I am in calculate accurary \n ", X_norm, '\n', tempX_norm, '\n')
 
     if(abs(X_norm - tempX_norm) > accuracy):
         return True
@@ -43,17 +49,16 @@ def Interior_Point_Solver(A, B, C, X, alpha, accuracy):
 
         tempX = np.matmul(D, np.transpose(X_tilda))
 
-        print("This is the {} iteration".format(iter))
-        iter += 1
-
-        print(tempX, '\n')
-
         flag = calculate_accuracy(X, tempX, accuracy, C)
 
         if(flag == False):
-           print("The vector of decision variables is: ", tempX, '\n')
+           print("The vector of decision variables is: ", '\n')
+           print_array(tempX)
            break
         else:
+            print("This is the {} iteration".format(iter))
+            iter += 1
+            print_array(tempX)
             X = tempX
             X = np.squeeze(X)
 
