@@ -27,27 +27,16 @@ To run this project, follow these steps:
    ```bash
    https://github.com/Isistickz/interior_point
    ```
-Install the required dependencies.
-bash
-Copy code
-pip install -r requirements.txt
-Usage
-To use the Interior Point algorithm, import the relevant modules in your Python script.
-
-Initialize the algorithm with your problem parameters and constraints.
-
-Run the algorithm, and it will find the optimal solution to your problem.
-
-python
-Copy code
-from interior_point import InteriorPointSolver
-
-# Initialize the solver
-solver = InteriorPointSolver(problem_parameters, constraints)
-
-# Run the solver
-result = solver.solve()
-For more detailed information, refer to the project's documentation.
+2. Install the dependency
+```bash
+pip install numpy
+```
+3. cd into the folder and run the main.py
+```bash
+cd interior_point
+python main.py
+```
+4. Follow the prompts of the program to enter the inputs
 
 ## Contributors
 This project was a collaborative effort by the following team members:
