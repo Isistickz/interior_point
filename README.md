@@ -11,12 +11,12 @@
 
 ## Introduction
 
-This project is an implementation of the Interior Point algorithm, which is used for solving linear and quadratic programming problems. The algorithm is designed to find the optimal solution to such problems.
+This project is an implementation of the Interior Point algorithm, which is used for solving linear  programming problems. The algorithm is designed to find the optimal solution to such problems.
 
 ## Features
 
 - Solve linear programming problems.
-- Provide detailed information of the value of the decision variables in each iteration.
+- Provide detailed information on the value of the decision variables in each iteration that the program runs.
 - Customizable parameters to fine-tune the algorithm, such as the accuracy and the initial point of the specific problem.
 
 ## Installation
