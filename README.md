@@ -36,7 +36,9 @@ pip install numpy
 cd interior_point
 python main.py
 ```
-4. Follow the prompts of the program to enter the inputs
+4. Follow the prompts of the program to enter the inputs. We make two fundamental assumptions about the LPPs you want to solve:
+   - That they are in standard form already, i.e. all slack variables have been added already.
+   - That they are maximization problems.
 
 ## Contributors
 This project was a collaborative effort by the following team members:
