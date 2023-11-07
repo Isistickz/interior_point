@@ -21,7 +21,7 @@ def main():
 
     X = np.array(list(map(float, input("Enter the initial trial point for the Interior point algorithm:\n").split())))
 
-    approximation_accuracy = int(input("Enter the approximation accuracy:\n"))
+    approximation_accuracy = float(input("Enter the approximation accuracy:\n"))
 
     alpha = float(input("Enter the alpha: \n"))
 
