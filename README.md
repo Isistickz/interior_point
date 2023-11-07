@@ -52,12 +52,12 @@ For more detailed information, refer to the project's documentation.
 ## Contributors
 This project was a collaborative effort by the following team members:
 
-# Israel Adewuyi
-# Yehia Sobeh
-# Egor Machnev
-# Khush Patel
-# Hadi Salloum
-# Mike Tezin
+- Israel Adewuyi
+- Yehia Sobeh
+- Egor Machnev
+- Khush Patel
+- Hadi Salloum
+- Mike Tezin
 
 
 ## License
