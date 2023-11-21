@@ -29,12 +29,12 @@ To run this project, follow these steps:
    ```
 2. Install the dependency
 ```bash
-pip install numpy
+pip install streamlit
 ```
 3. cd into the folder and run the main.py
 ```bash
-cd interior_point
-python main.py
+cd optimization
+//Khush, edit and enter here, or whereever you think is relevant
 ```
 4. Follow the prompts of the program to enter the inputs. 
 
