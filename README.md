@@ -25,7 +25,7 @@ To run this project, follow these steps:
 
 1. Clone the repository to your local machine.
    ```bash
-   https://github.com/khushpatel2002/optimization
+   git clone https://github.com/khushpatel2002/optimization
    ```
 2. Install the dependency
 ```bash
